@@ -195,6 +195,7 @@ def parse_manifest(manfile):
     service = ''
     url = ''
     databases = {}
+    pathpieces = ''
     with open(manfile, 'r') as f:
         manifest = json.load(f)
     mxd = manifest['resources'][0]['onPremisePath']
